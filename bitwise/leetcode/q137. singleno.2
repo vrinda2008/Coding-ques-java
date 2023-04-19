@@ -1,0 +1,36 @@
+/*
+1.sort
+2. take 3 cases
+case1: check 1st element = next element or not if no then return that element
+
+case2: cehck middle element uske left and right element se go till n-1 because n-1 is last ele uska next nahi h element
+
+case3: aftrer array traversal if all none then return n-1 element
+*/
+
+
+class Solution {
+    public int singleNumber(int[] a) {
+
+        
+        // case1
+        int n=a.length;
+        Arrays.sort(a);
+        int k=0;
+        if(a.length>1){
+        if(a[k]!=a[k+1]){
+            return a[0];
+        }
+        }
+
+        // case2
+        for(int i=1;i<n-1;i++){
+            if(a[i]!=a[i-1] && a[i]!=a[i+1]){
+                return a[i];
+            }
+        }
+
+        // case3
+        return a[n-1];
+    }
+}
