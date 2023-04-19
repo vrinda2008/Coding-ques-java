@@ -1,0 +1,27 @@
+/*
+
+q136 leetcode: single number
+ * 
+ 
+ * find unique element in array using xor operator where every element is present twice except onr element
+ * 
+ * exp: 
+ * 
+ * a^0=a
+ * a^a=0
+ * 
+ * 
+ *  * 
+ */
+
+public class bitwisexorunique {
+ public static void main(String[] args) {
+    int a[]={1,1,2,3,3};
+
+    int ans=0;
+    for(int i=0;i<5;i++){
+        ans=ans^a[i];
+    }
+    System.out.println(ans);
+ }   
+}
