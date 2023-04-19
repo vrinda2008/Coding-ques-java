@@ -1,0 +1,19 @@
+
+/*
+ * set ith bit as 1 and find the no.
+ * 
+ * exp: take 1 and left shift it by i-1 and then take its or with no.
+ * 
+ */
+
+public class setithbit {
+    public static void main(String[] args) {
+        int n=12;
+        int i=2;
+
+        int m=1;
+        m=m<<(i-1);
+        int g=m|n;
+        System.out.println(g);
+    }    
+}
