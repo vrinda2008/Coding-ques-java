@@ -1,0 +1,21 @@
+// check ith bit is 1 or 0
+//eg: 12(1100) check ith bit(3rd bit) it means piche se 3rd bit check krni hai i.e 1 in this case
+//phle do i-1 times right shift aise krte hue we get ith bit and then and it with 1
+
+
+public class bitmasking {
+
+    public static void main(String[] args) {
+        int n=12; //1100
+        int i=3;
+
+       n=n>>(i-1);
+       n=n&1;
+       if(n==1){
+        System.out.println("1");
+       }
+       else{
+        System.out.println("0");
+       }
+    }
+}
