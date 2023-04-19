@@ -1,0 +1,27 @@
+/*
+ * check odd or even no. using bitwise operator
+ * 
+ * check last bit is 0 or 1 
+ * if 0:even
+ * if 1: odd
+ * 
+ * bcoz only 2^0=1 i.e odd
+ * only this 1 decides even or odd=LEAST SIGNIFICANT BIT
+ */
+
+
+public class bitwiseoddeven {
+    public static void main(String[] args) {
+        int n=5;
+
+        int mask=1;
+        int g=mask&n;
+
+        if(g==1){
+            System.out.println("odd");
+        }
+        else{
+            System.out.println("even");
+        }
+    }
+    }
